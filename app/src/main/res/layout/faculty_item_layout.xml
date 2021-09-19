@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:strokeWidth="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/faculty_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Himanshu Sharma"
+                    android:textColor="@color/Black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/faculty_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Principle"
+                    android:textColor="@color/Black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/faculty_degrees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="BCA"
+                    android:textColor="@color/Black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Experience : "
+                        android:textColor="@color/Black"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/faculty_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="02 year"
+                        android:textColor="@color/Black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inds. Experience : "
+                        android:textColor="@color/Black"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/faculty_industry_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="02 year"
+                        android:textColor="@color/Black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/faculty_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Himanshu@gmail.com"
+                    android:textColor="@color/Black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/faculty_profile"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5"
+                android:src="@drawable/profile" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

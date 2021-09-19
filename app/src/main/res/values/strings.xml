@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My College</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Hello blank fragment</string>
+    <string name="close">Hello blank fragment</string>
+
+    <string name="about_collage">This Government College established in 2013 with the assistance of central government with the aim of developing rural area and inculcating technical skill in the youth to accept global challenges. Three-year course of Bachelor of Commerce  started in year 2013.Bachelor of Computer Applications and Bachelor of Business Administration started in year 2015. At present three courses are running in this institute. This institute is situated at City-Surat.</string>
+    <string name="todo">todo</string>
+    <string name="sign_in"><u>Sign in</u></string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="forget_password">Forget password ?</string>
+    <string name="s_i_g_n_i_n">s i g n i n</string>
+    <string name="bca">Bachelor of Computer Applications </string>
+    <string name="bba">Bachelor of Business Administration</string>
+    <string name="bcom">Bachelor of Commerce</string>
+    <string name="notice">Notice</string>
+    <string name="f_y_syllabus">F.Y Syllabus</string>
+    <string name="s_y_syllabus">S.Y Syllabus</string>
+    <string name="t_y_syllabus">T.Y Syllabus</string>
+    <string name="roll_no"><u>Roll no</u></string>
+    <string name="signup"><u>Signup</u></string>
+    <string name="reset_text">Please enter your register email address to send password reset mail .</string>
+    <string name="send">s e n d</string>
+    <string name="reset_password">Reset Password</string>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_size0">16sp</dimen>
+    <dimen name="text_size1">17sp</dimen>
+    <dimen name="text_size2">19sp</dimen>
+    <dimen name="text_size01">14sp</dimen>
+    <dimen name="title_size">22sp</dimen>
+
+    <dimen name="title_size2">20sp</dimen>
+    <dimen name="small_gap">5dp</dimen>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home_navigation">
+
+    <fragment
+        android:id="@+id/about_navigation"
+        android:name="com.example.mycollege.ui.about.aboutFragment"
+        android:label="about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/gallery_navigation"
+        android:name="com.example.mycollege.ui.gallery.galleryFragment"
+        android:label="gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/home_navigation"
+        android:name="com.example.mycollege.ui.home.homeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/notice_navigation"
+        android:name="com.example.mycollege.ui.notice.noticeFragment"
+        android:label="notice"
+        tools:layout="@layout/fragment_notice" />
+    <fragment
+        android:id="@+id/faculty_navigation"
+        android:name="com.example.mycollege.ui.faculty.facultyFragment"
+        android:label="faculty"
+        tools:layout="@layout/fragment_faculty" />
+
+</navigation>

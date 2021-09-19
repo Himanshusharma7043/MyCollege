@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:background="#E7F8FA"
+    tools:context=".RegisterActivity">
+
+    <View
+        android:id="@+id/view_blank"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ic_bg_topheader"
+        android:clickable="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_circle"
+        android:padding="10dp"
+        android:src="@drawable/main_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/credentials_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="7dp"
+                        app:cardUseCompatPadding="true"
+                        tools:ignore="MissingConstraints">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="vertical" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/add_staff_toolbar">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/upload"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:layout_marginTop="20dp"
+                                android:focusableInTouchMode="true">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/credentials_card1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:padding="1dp"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/student_profile"
+                                        android:layout_width="96dp"
+                                        android:layout_height="96dp"
+                                        android:cropToPadding="true"
+                                        android:src="@drawable/profile"
+                                        app:layout_constraintLeft_toLeftOf="parent"
+                                        app:layout_constraintRight_toRightOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <ImageButton
+                                    android:id="@+id/uploadprofile"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="130dp"
+                                    android:layout_marginRight="70dp"
+                                    android:background="@drawable/white_circle"
+                                    android:padding="10dp"
+                                    android:src="@drawable/ic_baseline_add_24"
+                                    app:layout_constraintBottom_toBottomOf="@+id/credentials_card1"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/roll_no"
+                                    android:textColor="@color/Black"
+                                    android:textSize="20dp"
+                                    android:layout_marginLeft="5dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=":-"
+                                    android:textColor="@color/Black"
+                                    android:textSize="20dp"
+                                    android:layout_marginLeft="5dp"
+                                    />
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    app:boxCornerRadiusBottomEnd="10dp"
+                                    app:boxCornerRadiusBottomStart="10dp"
+                                    app:boxCornerRadiusTopEnd="12dp"
+                                    app:boxCornerRadiusTopStart="12dp"
+                                    app:endIconMode="clear_text"
+                                    android:layout_marginLeft="10dp">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/rollno"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawablePadding="10dp"
+                                        android:hint="Enter Roll number"
+                                        android:maxLines="1"
+                                        android:maxLength="6"
+                                        android:singleLine="true"
+                                        android:textColor="@color/Black"
+                                        android:textColorHint="#8E8282" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                app:boxCornerRadiusBottomEnd="10dp"
+                                app:boxCornerRadiusBottomStart="10dp"
+                                app:boxCornerRadiusTopEnd="12dp"
+                                app:boxCornerRadiusTopStart="12dp"
+                                app:endIconMode="clear_text">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/student_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/ic_person"
+                                    android:drawableLeft="@drawable/ic_person"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Enter name"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/Black"
+                                    android:textColorHint="#8E8282" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                app:boxCornerRadiusBottomEnd="12dp"
+                                app:boxCornerRadiusBottomStart="12dp"
+                                app:boxCornerRadiusTopEnd="12dp"
+                                app:boxCornerRadiusTopStart="12dp"
+                                app:boxStrokeColor="@color/Black"
+                                app:boxStrokeWidth="1dp"
+                                app:endIconMode="clear_text">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/student_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/ic_baseline_email_24"
+                                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Enter  Email "
+                                    android:inputType="textEmailAddress"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:textColor="@color/Black"
+                                    android:textColorHint="#8E8282" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                app:boxCornerRadiusBottomEnd="12dp"
+                                app:boxCornerRadiusBottomStart="12dp"
+                                app:boxCornerRadiusTopEnd="12dp"
+                                app:boxCornerRadiusTopStart="12dp"
+                                app:endIconMode="clear_text">
+
+                                <MultiAutoCompleteTextView
+                                    android:id="@+id/student_ph"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                                    android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                                    android:drawablePadding="10dp"
+                                    android:inputType="number"
+                                    android:hint="Enter Phone number "
+                                    android:maxLines="1"
+                                    android:padding="15dp"
+                                    android:textColor="@color/Black"
+                                    android:textColorHint="#8E8282"
+                                    android:textSize="16sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                app:boxCornerRadiusBottomEnd="12dp"
+                                app:boxCornerRadiusBottomStart="12dp"
+                                app:boxCornerRadiusTopEnd="12dp"
+                                app:boxCornerRadiusTopStart="12dp"
+                                app:endIconMode="clear_text">
+
+                                <MultiAutoCompleteTextView
+                                    android:id="@+id/studentDOB"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="55dp"
+                                    android:drawableStart="@drawable/calendar"
+                                    android:drawableLeft="@drawable/calendar"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Enter Date of Birth"
+                                    android:inputType="number"
+                                    android:maxLines="1"
+                                    android:padding="15dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/Black"
+                                    android:textColorHint="#8E8282"
+                                    android:textSize="16sp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/spinner_border"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/studentDepartment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:spinnerMode="dropdown" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/drop" />
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/spinner_border"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/studentYear"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:spinnerMode="dropdown" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/drop" />
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+
+                                android:background="@drawable/spinner_border"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/studentSection"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:background="@android:color/transparent"
+                                    android:spinnerMode="dropdown" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/drop" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="60dp"
+                                android:padding="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Already have account ?"
+                                    android:textColor="#3636F6" />
+
+                                <TextView
+                                    android:id="@+id/sign_inlink"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="@string/sign_in"
+                                    android:textColor="@color/Blue" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/signupbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/buttonevent"
+                    android:text="S I G N   U P"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/credentials_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

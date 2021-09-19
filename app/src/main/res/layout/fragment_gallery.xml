@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F9FA"
+    tools:context=".ui.gallery.galleryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginVertical="8dp"
+            android:background="@color/cardColor"
+            android:padding="10dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:text="Republic Day"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="4dp"
+                    android:background="@color/Gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/republic_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/cardColor"
+            android:padding="10dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Farewell"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="4dp"
+                    android:background="@color/Gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/farewell"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/cardColor"
+            android:padding="10dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="College Events"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="4dp"
+                    android:background="@color/Gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/collegeEvents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginVertical="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginTop="40dp"
+            android:background="@color/cardColor"
+            android:padding="10dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Holi"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="4dp"
+                    android:background="@color/Gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/holi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/cardColor"
+            android:padding="10dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Independence Day"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="4dp"
+                    android:background="@color/Gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/independenceDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@color/cardColor"
+            android:padding="10dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Teachers Day"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="4dp"
+                    android:background="@color/Gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/teachersDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/cardColor"
+            android:padding="10dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Ganesh Chaturthi"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="4dp"
+                    android:background="@color/Gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ganeshChaturthi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@color/cardColor"
+            android:padding="10dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Diwali"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="4dp"
+                    android:background="@color/Gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/diwali"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginVertical="30dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@color/cardColor"
+            android:padding="10dp"
+            app:cardElevation="3dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="3dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Navratri"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="4dp"
+                    android:background="@color/Gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/navratri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

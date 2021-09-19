@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:checkable="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp"
+    app:strokeWidth="3dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardview_bg"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/w"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/main_logo"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+                <TextView
+                    android:id="@+id/notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:singleLine="false"
+                    android:text="N O T I C E"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/w"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/DarkGray" />
+
+            <com.skyhope.showmoretextview.ShowMoreTextView
+                android:id="@+id/notice_title"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                />
+
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notice_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/notice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Time"
+                app:layout_constraintLeft_toRightOf="@+id/notice_date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/Black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="~"
+                android:textColor="@color/Black"
+                app:layout_constraintRight_toLeftOf="@+id/notice_sender"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/notice_sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Principal"
+                android:textColor="@color/Black"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/notice_image"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:padding="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
